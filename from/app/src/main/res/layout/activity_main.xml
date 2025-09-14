@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/Edt"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@id/Name" />
+
+    <TextView
+        android:id="@+id/DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="19dp"
+        android:text="DOB"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/Edt1"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/Edt"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="-8dp"
+        android:layout_toRightOf="@id/DOB" />
+
+    <TextView
+        android:id="@+id/JT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DOB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Joining Time"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/Edt2"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/Edt1"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/JT" />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/JT"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Gender"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/RG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Gender"
+        android:layout_below="@id/Edt2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FeMale" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Gender"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="39dp"
+        android:text="Subject:"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RG"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/Subject"
+        android:text="WBP" />
+    <CheckBox
+        android:id="@+id/c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RG"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/c1"
+        android:text="MAD"/>
+    <CheckBox
+        android:id="@+id/c3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RG"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/c2"
+        android:text="PWP"/>
+    <TextView
+        android:id="@+id/SEM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Subject"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:text="SEM:"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/SEM" />
+
+    <ToggleButton
+        android:id="@+id/tg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c3"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/sp"
+        android:textOff="Enabled"
+        android:textSize="20dp"
+        android:onClick="toggle"/>
+
+    <Button
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="277dp"
+        android:text="Select Country"
+        android:onClick="country"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="281dp"
+        android:src="@drawable/baseline_add_photo_alternate_24"
+        android:text="Gallery"
+       android:onClick="Gallery"/>
+
+    <Button
+        android:onClick="send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="56dp"
+        android:text="Send Info" />
+
+    <ImageButton
+        android:id="@+id/ca"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="76dp"
+        android:src="@drawable/baseline_calendar_today_24" />
+<ImageButton
+    android:id="@+id/alram"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:src="@drawable/baseline_access_time_24"
+    android:layout_toRightOf="@id/Edt2"
+    android:layout_below="@id/ca"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/baseline_account_circle_24" />
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Partical4_2</string>
+    <string name="s1_name"><br>ABC=85%</br></string>
+    <string name="s2_name">XYZ=65%</string>
+    <string name="s3_name">PQR=75%</string>
+
+</resources>

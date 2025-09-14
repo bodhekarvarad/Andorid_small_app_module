@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+   <EditText
+       android:id="@+id/eroll"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Entre a Roll"
+       android:textSize="30dp"/>
+    <EditText
+        android:id="@+id/ename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entre a Name"
+        android:textSize="30dp"/>
+    <EditText
+        android:id="@+id/ebrach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entre a Branch"
+        android:textSize="30dp"/>
+    <EditText
+        android:id="@+id/emarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entre a Marks"
+        android:textSize="30dp"/>
+    <EditText
+        android:id="@+id/eper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entre a Percentage"
+        android:textSize="30dp"/>
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit"
+        android:textSize="30dp"/>
+    <TableLayout
+         android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+       android:stretchColumns="*" >
+       <TableRow
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Roll No "
+               android:textStyle="bold"
+               android:layout_weight="1" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Name"
+               android:textStyle="bold"
+               android:layout_weight="1" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Branch"
+               android:textStyle="bold"
+               android:layout_weight="1" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Marks"
+               android:textStyle="bold"
+               android:layout_weight="1" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Percentage"
+               android:textStyle="bold"
+               android:layout_weight="1" />
+       </TableRow>
+
+    </TableLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FE"
+    android:padding="10dp">
+
+    <ImageButton
+        android:id="@+id/btnRestart"
+        android:layout_width="117dp"
+        android:layout_height="121dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/restart"
+        android:onClick="restart" />
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="99dp"
+        android:layout_height="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/exit"
+        android:onClick="exit" />
+
+    <ImageView
+        android:id="@+id/ivNewHighest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="345dp"
+        android:background="@drawable/new_hightest" />
+
+    <TextView
+        android:id="@+id/tvYourPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRestart"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="284dp"
+        android:text="Your Points: "
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="264dp"
+        android:layout_toRightOf="@id/tvYourPoints"
+        android:text="50"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="50sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="376dp" />
+
+</RelativeLayout>

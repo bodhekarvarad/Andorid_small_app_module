@@ -1,0 +1,56 @@
+buildscript {
+    ext {
+        versions = [
+                compileSdk         : 34,
+                targetSdk          : 33,
+                minSdk             : 17,
+                ndk                : '26.1.10909125',
+                androidxAppcompat  : '1.6.1',
+                lifecycle          : '2.6.2',
+                androidxAnnotations: '1.6.0',
+                androidxTest       : '1.5.0',
+                androidxTestRunner : '1.5.2',
+                coroutines         : '1.7.3',
+                leakCanary         : '2.12',
+                kotlin             : '1.9.10',
+                intellijAnnotations: '13.0',
+                material           : '1.10.0',
+                androidXextJunit   : '1.1.5',
+                androidGradlePlugin: '8.1.2',
+                junit              : '4.13.2',
+                mockito            : '5.6.0',
+                robolectric        : '4.10.3',
+                assertj3           : '3.24.2',
+                assertj1           : '1.7.1',
+                concurrentunit     : '0.4.6',
+                openglApi          : 'gl1.1-android-2.1_r1',
+                mockwebserver      : '4.9.2',
+                relinker           : '1.4.5',
+                mavenPublishPlugin : '0.21.0',
+        ]
+    }
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$versions.androidGradlePlugin"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+        classpath "com.vanniktech:gradle-maven-publish-plugin:$versions.mavenPublishPlugin"
+    }
+}
+
+plugins {
+    id 'org.jetbrains.kotlinx.binary-compatibility-validator' version '0.13.2'
+}
+
+subprojects {
+    tasks.withType(JavaCompile).configureEach {
+        options.compilerArgs << '-Xlint'
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+}

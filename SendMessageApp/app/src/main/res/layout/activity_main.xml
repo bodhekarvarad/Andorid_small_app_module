@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nature"
+        />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Message"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Message"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/t"
+        android:layout_alignBottom="@+id/t"/>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Mobile number"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/t1"
+        android:layout_alignBottom="@+id/t1"/>
+    <Button
+        android:background="#03A9F4"
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="150dp"/>
+
+
+</RelativeLayout>

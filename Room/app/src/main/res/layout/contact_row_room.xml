@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="7dp"
+        app:cardUseCompatPadding="true"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="10dp"
+        app:cardBackgroundColor="#6D9773">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="138dp"
+            android:src="@drawable/room_profile"
+            android:id="@+id/image1"
+
+            android:background="@drawable/profile_img_cur"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/row1"
+            android:padding="11dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_marginLeft="115dp"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/txtAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Address"
+                    android:layout_marginLeft="115dp"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/txtContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Contact"
+                    android:layout_marginLeft="115dp"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</LinearLayout>

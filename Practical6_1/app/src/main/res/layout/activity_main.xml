@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Profile"
+                android:textAlignment="center"
+                android:textSize="40dp"
+              />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_account_circle_24"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABC"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_android_24"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DEF"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_account_circle_24"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GHI"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_android_24"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JKL"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_account_circle_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MNO"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_android_24"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PQR"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_account_circle_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STU"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_account_circle_24"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VWX"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_account_circle_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YZ0"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_account_circle_24"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POQ"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+        </TableRow>
+
+
+
+</TableLayout>

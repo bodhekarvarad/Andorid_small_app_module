@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7AEF8"
+    >
+<ImageView
+    android:id="@+id/img1"
+    android:layout_width="200dp"
+    android:layout_height="180dp"
+    android:src="@drawable/img_2"
+    android:layout_gravity="center"
+    android:scaleType="fitXY"
+    android:layout_centerHorizontal="true"
+
+
+
+    />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:stretchColumns="0,1,1">
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slideup"
+                    android:backgroundTint="#ff0490"
+                    android:onClick="Slideup"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slidedown"
+                    android:backgroundTint="#ff0490"
+                    android:onClick="Slidedown"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SlideLeft"
+                    android:onClick="SlideLeft"
+                    android:backgroundTint="#ff0490"
+                    android:layout_margin="5dp"
+                    />
+            </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/b1"
+            android:layout_below="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blink"
+            android:backgroundTint="#ff007f"
+            android:layout_margin="5dp"
+                android:onClick="Blink"
+            />
+                <Button
+                    android:layout_alignBottom="@+id/b1"
+android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zoomin"
+                    android:backgroundTint="#ff007f"
+                    android:onClick="Zoomin"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zoomout"
+                    android:onClick="Zoomout"
+                    android:backgroundTint="#ff007f"
+                    android:layout_margin="5dp"
+                    />
+    </TableRow>
+
+
+        <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SlideRight"
+                    android:onClick="SlideRight"
+                    android:backgroundTint="#ff1493"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moveup"
+                    android:onClick="Moveup"
+                    android:backgroundTint="#ff1493"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movedown"
+                    android:onClick="Movedown"
+                    android:backgroundTint="#ff1493"
+                    android:layout_margin="5dp"
+                    />
+
+        </TableRow>
+        <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moveleft"
+                    android:backgroundTint="#e0218a"
+                    android:onClick="Moveleft"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moveright"
+                    android:onClick="Moveright"
+                    android:backgroundTint="#e0218a"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rotateclk"
+                    android:backgroundTint="#e0218a"
+                    android:onClick="Rotateclk"
+                    android:layout_margin="5dp"
+                    />
+        </TableRow>
+        <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rotateanti"
+                    android:backgroundTint="#ff0490"
+                    android:onClick="Rotateanticlk"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fadein"
+                    android:backgroundTint="#ff0490"
+                    android:onClick="fadein"
+                    android:layout_margin="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ff0490"
+                    android:text="fadeout"
+                    android:onClick="fadeout"
+                    android:layout_margin="5dp"
+                    />
+
+        </TableRow>   </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:stretchColumns="*">
+                <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bounce"
+                    android:onClick="Bounce"
+                    android:backgroundTint="#fd1593"
+                    android:layout_margin="5dp"
+                    />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Stop"
+                            android:backgroundTint="#fd1593"
+                            android:onClick="StopAnimation"
+                            android:layout_margin="5dp"
+
+                            />
+                </TableRow>
+
+        </TableLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

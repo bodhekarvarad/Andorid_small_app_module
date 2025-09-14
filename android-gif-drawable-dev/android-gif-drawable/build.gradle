@@ -1,0 +1,82 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.vanniktech.maven.publish'
+apply plugin: 'kotlin-android'
+
+group = 'pl.droidsonroids.gif'
+description = 'Views and Drawable for displaying animated GIFs for Android'
+
+android {
+    ndkVersion versions.ndk
+    compileSdkVersion versions.compileSdk
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        consumerProguardFiles 'consumer-proguard-rules.pro'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        externalNativeBuild {
+            cmake {
+                arguments "-DANDROID_PLATFORM=android-$versions.minSdk", "-DANDROID_STL=none"
+                cFlags '-std=c11', '-Weverything', '-Wall'
+                if (isDevelopmentBuild()) {
+                    cFlags '-DDEBUG', '-g'
+                } else {
+                    cFlags '-DNDEBUG', '-Os', '-g0', '-fvisibility=hidden'
+                }
+            }
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path 'src/main/c/CMakeLists.txt'
+        }
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    namespace 'pl.droidsonroids.gif'
+    testNamespace 'pl.droidsonroids.gif.test'
+}
+
+dependencies {
+    implementation "com.getkeepsafe.relinker:relinker:$versions.relinker"
+    compileOnly "androidx.annotation:annotation:$versions.androidxAnnotations"
+    testCompileOnly "androidx.annotation:annotation:$versions.androidxAnnotations"
+    testImplementation "junit:junit:$versions.junit"
+    testImplementation "org.mockito:mockito-core:$versions.mockito"
+    testImplementation "org.robolectric:robolectric:$versions.robolectric"
+    testImplementation "org.assertj:assertj-core:$versions.assertj3"
+    testImplementation "net.jodah:concurrentunit:$versions.concurrentunit"
+    testImplementation "org.khronos:opengl-api:$versions.openglApi"
+    androidTestImplementation "junit:junit:$versions.junit"
+    androidTestImplementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin"
+    androidTestImplementation "org.assertj:assertj-core:$versions.assertj1"
+    androidTestImplementation "androidx.test.ext:junit:$versions.androidXextJunit"
+    androidTestImplementation "com.squareup.okhttp3:mockwebserver:$versions.mockwebserver"
+    androidTestImplementation "androidx.test:rules:$versions.androidxTest"
+    androidTestImplementation "androidx.test:runner:$versions.androidxTestRunner"
+    androidTestCompileOnly "androidx.annotation:annotation:$versions.androidxAnnotations"
+}
+
+def isDevelopmentBuild() {
+    return project.findProperty('android.injected.invoked.from.ide') == 'true'
+}
+
+tasks.register('archiveSymbols', Tar) {
+    def buildDirectory = layout.buildDirectory.asFile.get()
+    from new File(buildDirectory, 'intermediates/cmake/release/obj')
+    archiveBaseName = "${project.archivesBaseName}-symbols"
+    destinationDirectory = new File(buildDirectory, 'libs')
+    archiveExtension = 'tar.gz'
+    compression = Compression.GZIP
+}
+
+configurations.configureEach {
+    resolutionStrategy.force "androidx.annotation:annotation:$versions.androidxAnnotations"
+}
+

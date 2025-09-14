@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:src="@drawable/city"
+       android:id="@+id/img"
+       />
+   <Button
+       android:id="@+id/btn1"
+       android:layout_below="@+id/img"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="Fade in"
+       android:onClick="Fade_in"/>
+
+   <Button
+       android:id="@+id/out"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/img"
+       android:layout_marginLeft="95dp"
+       android:onClick="Fade_out"
+       android:text="Fade out" />
+
+   <Button
+       android:id="@+id/zin"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/img"
+       android:layout_alignRight="@+id/out"
+     android:text="Zoom In"
+       android:onClick="Zoom_In"
+       android:layout_marginRight="-105dp" />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:layout_below="@+id/img"
+       android:layout_alignRight="@+id/zin"
+       android:text="Zoom Out"
+       android:onClick="Zoom_out"
+       android:layout_marginRight="-110dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">15_1</string>
+    <string name="message">Message for you<br>
+        You have got mail!
+    </br>
+
+
+    </string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Name=Hospital Name</string>
+    <string name="Address">Address Hospital
+    </string>
+    <string name="Contact">Contact Hospital
+    </string>
+    <string name="Select_Area">Area</string>
+
+    <string name="Select_Type">Veg/Non-Veg</string>
+
+</resources>

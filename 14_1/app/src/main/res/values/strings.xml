@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">14_1</string>
+    <string-array name="arr">
+        <item>Android</item>
+        <item>Java</item>
+        <item>Php</item>
+        <item>Hadoop</item>
+        <item>Sap</item>
+        <item>Python</item>
+        <item>Ajax</item>
+        <item>C++</item>
+        <item>Ruby</item>
+        <item>Rails</item>
+        <item>.Net</item>
+        <item>Perl</item>
+        <item>C</item>
+        <item>Java Script</item>
+        <item>Kotlin</item>
+        <item>C#</item>
+        <item>VB.Net</item>
+        <item>ASP.Net</item>
+        <item>Sql</item>
+        <item>PlSql</item>
+        <item>JSP</item>
+        <item>ASP</item>
+        <item>HTML</item>
+        <item>JDBC</item>
+    </string-array>
+
+</resources>
